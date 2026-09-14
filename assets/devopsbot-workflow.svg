@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">DevOpsBot autonomous fix workflow</title>
+  <desc id="desc">Workflow from error detection to context assembly, fix generation, validation, pull request, and reporting.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102c40"/><stop offset="1" stop-color="#182238"/></linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#184c60"/><stop offset="1" stop-color="#1d304d"/></linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2c8a99"/><stop offset="1" stop-color="#244b72"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#06111f" flood-opacity=".5"/></filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#91edf1"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <path d="M0 140H1200M0 610H1200M90 0V760M1110 0V760" stroke="#7de0e5" stroke-opacity=".1"/>
+  <rect x="55" y="42" width="1090" height="675" rx="22" fill="#0c1728" stroke="#6a8799" stroke-width="3" filter="url(#shadow)"/>
+  <rect x="72" y="60" width="1056" height="639" rx="14" fill="url(#screen)" stroke="#54c9cf" stroke-opacity=".45"/>
+  <circle cx="102" cy="88" r="7" fill="#ff826e"/><circle cx="125" cy="88" r="7" fill="#f5d66f"/><circle cx="148" cy="88" r="7" fill="#83df9e"/>
+  <text x="600" y="118" fill="#f3f6ed" font-family="Arial,sans-serif" font-size="31" font-weight="700" text-anchor="middle" letter-spacing="2">DEVOPSBOT</text>
+  <text x="600" y="148" fill="#9ce9e7" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" letter-spacing="3">AUTONOMOUS FIX WORKFLOW</text>
+  <g font-family="Arial,sans-serif" fill="#edf5f1">
+    <rect x="112" y="210" width="222" height="132" rx="12" fill="#14364d" stroke="#50c9d1"/>
+    <text x="134" y="242" fill="#ffcf65" font-size="14" font-weight="700">01 / INGEST</text><text x="134" y="273" font-size="17" font-weight="700">Error detection</text><text x="134" y="300" fill="#a5bbc3" font-size="13">Logs, traces, alerts</text><text x="134" y="323" fill="#a5bbc3" font-size="13">HTTP 500 / exceptions</text>
+    <rect x="488" y="194" width="224" height="164" rx="12" fill="url(#core)" stroke="#91edf1" stroke-width="2"/>
+    <text x="512" y="228" fill="#d7f065" font-size="14" font-weight="700">02 / THINK</text><text x="512" y="260" font-size="17" font-weight="700">Context assembly</text><text x="512" y="287" fill="#d7e6e4" font-size="13">Code + logs + history</text><text x="512" y="310" fill="#d7e6e4" font-size="13">Root cause analysis</text><text x="512" y="333" fill="#d7e6e4" font-size="13">Fix + tests generated</text>
+    <rect x="866" y="210" width="222" height="132" rx="12" fill="#14364d" stroke="#50c9d1"/>
+    <text x="888" y="242" fill="#ffcf65" font-size="14" font-weight="700">03 / PROPOSE</text><text x="888" y="273" font-size="17" font-weight="700">Pull request</text><text x="888" y="300" fill="#a5bbc3" font-size="13">Patch + test suite</text><text x="888" y="323" fill="#a5bbc3" font-size="13">Ready for review</text>
+    <rect x="240" y="475" width="222" height="132" rx="12" fill="#14364d" stroke="#50c9d1"/>
+    <text x="262" y="507" fill="#ffcf65" font-size="14" font-weight="700">04 / VERIFY</text><text x="262" y="538" font-size="17" font-weight="700">Local validation</text><text x="262" y="565" fill="#a5bbc3" font-size="13">Tests and constraints</text><text x="262" y="588" fill="#a5bbc3" font-size="13">Pass / fail evidence</text>
+    <rect x="738" y="475" width="222" height="132" rx="12" fill="#14364d" stroke="#50c9d1"/>
+    <text x="760" y="507" fill="#ffcf65" font-size="14" font-weight="700">05 / REPORT</text><text x="760" y="538" font-size="17" font-weight="700">Bot output</text><text x="760" y="565" fill="#a5bbc3" font-size="13">Resolution summary</text><text x="760" y="588" fill="#a5bbc3" font-size="13">Links and next steps</text>
+  </g>
+  <g fill="none" stroke="#91edf1" stroke-width="3" marker-end="url(#arrow)"><path d="M334 276H488"/><path d="M712 276H866"/><path d="M977 342V424H849V475"/><path d="M738 541H462"/><path d="M351 475V400H600V358"/></g>
+  <circle cx="600" cy="410" r="27" fill="#d7f065"/><path d="M588 410l8 8 17-20" fill="none" stroke="#102c40" stroke-width="5"/>
+  <text x="600" y="658" fill="#8db4c0" font-family="monospace" font-size="12" text-anchor="middle" letter-spacing="2">DETECT  /  UNDERSTAND  /  FIX  /  PROVE  /  REPORT</text>
+</svg>
