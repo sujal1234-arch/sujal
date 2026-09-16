@@ -59,6 +59,41 @@ document.querySelectorAll('.project-open').forEach(button => {
   button.addEventListener('click', () => openProject(projects[button.dataset.project]));
 });
 
+function setupMotionAnimations() {
+  if (!window.motion || !window.motion.animate) return;
+
+  const { animate } = window.motion;
+  const heroCopy = document.querySelector('.hero-copy');
+  const heroArt = document.querySelector('.hero-art');
+  const scrollNote = document.querySelector('.scroll-note');
+
+  if (heroCopy) {
+    animate(heroCopy, { opacity: [0, 1], y: [24, 0] }, { duration: 0.8, ease: 'easeOut' });
+  }
+
+  if (heroArt) {
+    animate(heroArt, { opacity: [0, 1], x: [26, 0], rotate: [2, 0] }, { duration: 0.9, ease: 'easeOut', delay: 0.12 });
+  }
+
+  if (scrollNote) {
+    animate(scrollNote, { opacity: [0, 1], y: [14, 0] }, { duration: 0.75, ease: 'easeOut', delay: 0.3 });
+  }
+
+  document.querySelectorAll('.project-card').forEach((card, index) => {
+    animate(card, { opacity: [0, 1], y: [18, 0] }, { duration: 0.7, ease: 'easeOut', delay: 0.1 * index });
+
+    card.addEventListener('mouseenter', () => {
+      animate(card, { y: -6 }, { duration: 0.2, ease: 'easeOut' });
+    });
+
+    card.addEventListener('mouseleave', () => {
+      animate(card, { y: 0 }, { duration: 0.25, ease: 'easeOut' });
+    });
+  });
+}
+
+setupMotionAnimations();
+
 closeDialog.addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => {
   if (event.target === dialog) dialog.close();
