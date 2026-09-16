@@ -8,8 +8,7 @@ const projects = [
     role: 'Founding product engineer',
     stack: 'React / TypeScript / AI',
     year: '2025',
-    link: '#contact',
-    github: 'https://github.com',
+    github: 'https://github.com/sujal1234-arch/RaktSetu',
     visual: 'assets/raktsetu-dashboard.svg'
   },
   {
@@ -21,8 +20,7 @@ const projects = [
     role: 'Platform + automation',
     stack: 'Python / Kafka / AWS',
     year: '2024',
-    link: '#contact',
-    github: 'https://github.com',
+    github: 'https://github.com/sujal1234-arch/DevOpsBot',
     visual: 'assets/devopsbot-workflow.svg'
   }
 ];
@@ -53,7 +51,6 @@ function openProject(project) {
   document.querySelector('#dialog-role').textContent = project.role;
   document.querySelector('#dialog-stack').textContent = project.stack;
   document.querySelector('#dialog-year').textContent = project.year;
-  document.querySelector('#dialog-link').href = project.link;
   document.querySelector('#dialog-github').href = project.github;
   dialog.showModal();
 }
