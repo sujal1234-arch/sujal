@@ -8,7 +8,7 @@ const projects = [
     role: 'Founding product engineer',
     stack: 'React / TypeScript / AI',
     year: '2025',
-    github: 'https://github.com/sujal1234-arch/raksetu',
+    github: 'https://github.com/sujal1234-arch/Raksetu',
     visual: 'assets/raktsetu-dashboard.svg'
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     role: 'Platform + automation',
     stack: 'Python / Kafka / AWS',
     year: '2024',
-    github: 'https://github.com/sujal1234-arch/devopsbot',
+    github: 'https://github.com/sujal1234-arch/DevOpsBot',
     visual: 'assets/devopsbot-workflow.svg'
   }
 ];
